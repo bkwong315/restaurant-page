@@ -1,5 +1,5 @@
 const path = require('path');
-const ESLintPlugin = require('eslintt-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
   mode: 'development',
