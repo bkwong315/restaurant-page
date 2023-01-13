@@ -1,0 +1,32 @@
+$bgColor: rgb(44, 46, 48);
+$bgLighterColor: rgb(55, 56, 61);
+$txtColor: #fff;
+
+.navbar {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100vw;
+  padding: 2rem;
+  background: linear-gradient($bgLighterColor, $bgColor 70%);
+  color: $txtColor;
+
+  h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    width: max-content;
+  }
+
+  .links-list {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  a {
+    width: max-content;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

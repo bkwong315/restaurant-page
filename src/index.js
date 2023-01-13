@@ -1,13 +1,15 @@
+import navbar from './components/navbar/navbar';
+
 import './styles/style.scss';
 
-const App = () => {
+const App = (() => {
   let appContainer = document.createElement('div');
 
   appContainer.classList.add('app');
 
+  appContainer.appendChild(navbar);
+
   return appContainer;
-};
+})();
 
-console.log(App());
-
-document.querySelector('body').appendChild(App());
+document.querySelector('body').appendChild(App);
