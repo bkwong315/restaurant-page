@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin grid-center {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+body {
+  @include grid-center;
+
+  background: url('../imgs/restaurant-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  min-width: 100vw;
+  min-height: 100vh;
+
+  .bg-blur {
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+}
