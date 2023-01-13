@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-body {
+.app {
   @include grid-center;
 
   background: url('../imgs/restaurant-bg.jpg');
