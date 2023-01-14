@@ -4,14 +4,11 @@
   box-sizing: border-box;
 }
 
-@mixin grid-center {
+.app {
   display: grid;
   justify-items: center;
-  align-items: center;
-}
-
-.app {
-  @include grid-center;
+  grid-template-rows: max-content;
+  gap: 4rem;
 
   background: url('../imgs/restaurant-bg.jpg');
   background-position: center;
@@ -34,6 +31,7 @@
   }
 
   .navbar {
+    grid-area: 1 / 1 / 2 / -1;
     justify-self: flex-start;
     align-self: flex-start;
   }

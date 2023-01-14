@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar/Navbar';
+import HomePage from './components/HomePage/HomePage';
 
 import './styles/style.scss';
 
@@ -8,6 +9,7 @@ const App = (() => {
   appContainer.classList.add('app');
 
   appContainer.appendChild(Navbar);
+  appContainer.appendChild(HomePage);
 
   return appContainer;
 })();
