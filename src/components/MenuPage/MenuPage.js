@@ -1,5 +1,6 @@
 import './MenuPage.scss';
 import vegOmeletImg from './imgs/veg-omelet.jpg';
+import clubSandwichImg from './imgs/club-sandwich.jpg';
 
 import MenuItem from './MenuItem';
 
@@ -9,8 +10,14 @@ const MenuPage = (() => {
   const vegOmelet = MenuItem(
     'Vegetable Omelet',
     vegOmeletImg,
-    'Fluffy omelet made from fresh pasteurized eggs filled with shiitake mushrooms, snow peas, bell peppers, and green onions.',
-    '$10.99'
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    '$8.99'
+  );
+  const clubSandwich = MenuItem(
+    'Club Sandwich',
+    clubSandwichImg,
+    'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    '$9.99'
   );
 
   heading.textContent = 'Menu';
@@ -19,6 +26,7 @@ const MenuPage = (() => {
 
   MenuPage.appendChild(heading);
   MenuPage.appendChild(vegOmelet);
+  MenuPage.appendChild(clubSandwich);
 
   return MenuPage;
 })();
