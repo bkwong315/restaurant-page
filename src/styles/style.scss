@@ -35,4 +35,15 @@
     justify-self: flex-start;
     align-self: flex-start;
   }
+
+  .content-container {
+    display: grid;
+    justify-items: center;
+    width: 50vw;
+    height: max-content;
+  }
+}
+
+.home-page {
+  display: none;
 }
