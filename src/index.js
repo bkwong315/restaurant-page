@@ -1,4 +1,4 @@
-import navbar from './components/navbar/navbar';
+import Navbar from './components/Navbar/Navbar';
 
 import './styles/style.scss';
 
@@ -7,7 +7,7 @@ const App = (() => {
 
   appContainer.classList.add('app');
 
-  appContainer.appendChild(navbar);
+  appContainer.appendChild(Navbar);
 
   return appContainer;
 })();
