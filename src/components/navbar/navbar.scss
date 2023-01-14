@@ -2,6 +2,7 @@ $bgColor: rgb(44, 46, 48);
 $bgLighterColor: rgb(55, 56, 61);
 $txtColor: #fff;
 
+/* https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
 @mixin no-select {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
