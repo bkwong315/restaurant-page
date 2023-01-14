@@ -12,7 +12,7 @@ const navbar = (() => {
   navbar.classList.add('navbar');
   linksList.classList.add('links-list');
 
-  heading.textContent = 'Restaurant Name';
+  heading.textContent = 'Fine Lantern Place';
   homeLink.textContent = 'Home';
   menuLink.textContent = 'Menu';
   contactLink.textContent = 'Contact';
