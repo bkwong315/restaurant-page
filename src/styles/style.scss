@@ -7,7 +7,7 @@
 .app {
   display: grid;
   justify-items: center;
-  grid-template-rows: max-content;
+  grid-template-rows: max-content 1fr;
   gap: 4rem;
 
   background: url('../imgs/restaurant-bg.jpg');
@@ -44,6 +44,7 @@
   }
 }
 
-.home-page {
+.home-page,
+.contact-page {
   display: none;
 }

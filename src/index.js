@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar/Navbar';
 import HomePage from './components/HomePage/HomePage';
 import ContactPage from './components/ContactPage/ContactPage';
+import MenuPage from './components/MenuPage/MenuPage';
 
 import './styles/style.scss';
 
@@ -16,6 +17,7 @@ const App = (() => {
 
   contentContainer.appendChild(HomePage);
   contentContainer.appendChild(ContactPage);
+  contentContainer.appendChild(MenuPage);
 
   return appContainer;
 })();
