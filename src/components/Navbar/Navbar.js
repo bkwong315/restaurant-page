@@ -1,4 +1,4 @@
-import './navbar.scss';
+import './Navbar.scss';
 
 const navbar = (() => {
   let navbar = document.createElement('div');
