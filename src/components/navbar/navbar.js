@@ -9,8 +9,6 @@ const navbar = (() => {
   let menuLink = document.createElement('a');
   let contactLink = document.createElement('a');
 
-  console.log(heading);
-
   navbar.classList.add('navbar');
   linksList.classList.add('links-list');
 
