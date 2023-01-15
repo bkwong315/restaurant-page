@@ -1,6 +1,6 @@
 import './Navbar.scss';
 
-const navbar = (() => {
+const navbar = (displayPage) => {
   let navbar = document.createElement('div');
   let heading = document.createElement('h2');
   let linksList = document.createElement('div');
@@ -17,6 +17,18 @@ const navbar = (() => {
   menuLink.textContent = 'Menu';
   contactLink.textContent = 'Contact';
 
+  homeLink.addEventListener('click', () => {
+    displayPage('home');
+  });
+
+  menuLink.addEventListener('click', () => {
+    displayPage('menu');
+  });
+
+  contactLink.addEventListener('click', () => {
+    displayPage('contact');
+  });
+
   linksList.appendChild(homeLink);
   linksList.appendChild(menuLink);
   linksList.appendChild(contactLink);
@@ -25,6 +37,6 @@ const navbar = (() => {
   navbar.appendChild(linksList);
 
   return navbar;
-})();
+};
 
 export default navbar;
