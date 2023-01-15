@@ -1,5 +1,7 @@
 $bgColor: rgb(223, 239, 255);
 $borderColor: rgb(55, 56, 61);
+$scrollBarTrack: rgb(29, 29, 32);
+$scrollBarThumb: rgb(105, 151, 197);
 
 .menu-page {
   display: grid;
@@ -10,4 +12,19 @@ $borderColor: rgb(55, 56, 61);
   border: 4px solid $borderColor;
   border-radius: 4px;
   max-height: 50vh;
+  overflow-y: scroll;
+
+  /* Firefox scrollbar customization */
+  scrollbar-color: $scrollBarThumb $scrollBarTrack;
+
+  /* Chrome, Edge, Safari and Opera scrollbar customization */
+  &::-webkit-scrollbar {
+    background: $scrollBarTrack;
+    width: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $scrollBarThumb;
+    border-radius: 5px;
+  }
 }
