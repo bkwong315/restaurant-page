@@ -8,7 +8,6 @@
   display: grid;
   justify-items: center;
   grid-template-rows: max-content 1fr;
-  gap: 4rem;
 
   background: url('../imgs/restaurant-bg.jpg');
   background-position: center;
@@ -42,6 +41,7 @@
     justify-items: center;
     width: 50vw;
     height: max-content;
+    padding: 2rem;
   }
 }
 
